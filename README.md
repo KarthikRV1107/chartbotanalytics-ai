@@ -56,9 +56,9 @@ package.json # Dependencies & scripts
 
 ## ⚙️ Installation & Setup
 
-
-1️⃣ Clone the Repository
 ```bash
+1️⃣ Clone the Repository
+
 git clone https://github.com/YOUR_USERNAME/chartbotanalytics-AI.git
 cd chartbotanalytics-AI
 
