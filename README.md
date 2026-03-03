@@ -6,7 +6,7 @@ AI-powered analytics platform that transforms raw data into intelligent charts, 
 
 ## 🌐 Live Project
 
-🔗 Live URL: https://your-domain.com  
+🔗 Live URL: [https://your-domain.com](https://chartbotanalytics-ai.lovable.app)  
 
 ---
 
@@ -56,8 +56,8 @@ package.json # Dependencies & scripts
 
 ## ⚙️ Installation & Setup
 
- 1️⃣ Clone the Repository
- 
+
+1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/YOUR_USERNAME/chartbotanalytics-AI.git
 cd chartbotanalytics-AI
