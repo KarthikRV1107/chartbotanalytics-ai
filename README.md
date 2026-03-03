@@ -76,8 +76,8 @@ or
 bun run dev
 
 Application runs at:
+http://localhost:5173
 
-[http://localhost:5173](https://chartbotanalytics-ai.lovable.app)
 🏗 Build for Production
 npm run build
 or
