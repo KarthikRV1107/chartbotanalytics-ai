@@ -65,11 +65,8 @@ cd chartbotanalytics-AI
 2️⃣ Install Dependencies
 
 Using npm:
-
 npm install
-
 Or using Bun:
-
 bun install
 
 3️⃣ Run Development Server
@@ -80,45 +77,39 @@ bun run dev
 
 Application runs at:
 
-http://localhost:5173
+[http://localhost:5173](https://chartbotanalytics-ai.lovable.app)
 🏗 Build for Production
 npm run build
-
 or
-
 bun run build
+
 🚀 Deployment
 
 You can deploy this project on:
-
-Vercel
-
-Netlify
-
-Render
-
+-Vercel
+-Netlify
+-Render
 Any static hosting provider supporting Vite builds
 
 🌍 Custom Domain
 
 After deployment, you can connect your custom domain from your hosting provider's dashboard.
 
-🤝 Contributing
 
+🤝 Contributing
 Pull requests are welcome.
 For major changes, please open an issue first to discuss proposed updates.
 
-📄 License
 
+📄 License
 This project is licensed under the MIT License.
 
-👨‍💻 Author
 
+👨‍💻 Author
 Developed by Karthik R V
 
+
 ⭐ If you find this project useful, consider giving it a star!
-
-
 ---
 
 If you want, I can now make:
@@ -127,5 +118,3 @@ If you want, I can now make:
 - 🏆 Hackathon winning README
 - 📈 Portfolio-optimized version
 - 🧠 Fully technical documentation version
-
-Tell me which level you want 🚀
