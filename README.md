@@ -56,11 +56,12 @@ package.json # Dependencies & scripts
 
 ## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the Repository
-
+ 1️⃣ Clone the Repository
+ 
 ```bash
 git clone https://github.com/YOUR_USERNAME/chartbotanalytics-AI.git
 cd chartbotanalytics-AI
+
 2️⃣ Install Dependencies
 
 Using npm:
@@ -70,11 +71,11 @@ npm install
 Or using Bun:
 
 bun install
+
 3️⃣ Run Development Server
+
 npm run dev
-
 or
-
 bun run dev
 
 Application runs at:
