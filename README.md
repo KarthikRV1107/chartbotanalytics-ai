@@ -6,7 +6,7 @@ AI-powered analytics platform that transforms raw data into intelligent charts, 
 
 ## 🌐 Live Project
 
-🔗 Live URL: [https://your-domain.com](https://chartbotanalytics-ai.lovable.app)  
+🔗 Live URL: [https://your-domain.com](https://chartbotanalytics-ai.vercel.app/)
 
 ---
 
