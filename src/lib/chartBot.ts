@@ -16,7 +16,7 @@ type ChartTemplate = {
 const templates: ChartTemplate[] = [
   {
     keywords: ["sales", "region"],
-    response: "Here's a breakdown of sales performance across different regions. North America leads with strong Q4 results.",
+    response: "📊 Here's a breakdown of sales performance across regions. North America leads with impressive Q4 growth of 38%, followed by Asia Pacific's rapid expansion.",
     chart: {
       type: "bar",
       title: "Sales by Region (in $K)",
@@ -32,7 +32,7 @@ const templates: ChartTemplate[] = [
   },
   {
     keywords: ["revenue", "monthly", "trend"],
-    response: "Revenue shows a strong upward trajectory throughout 2024, with a notable spike in November from holiday sales.",
+    response: "📈 Revenue shows a powerful upward trajectory throughout 2024! November peaked at $190K driven by holiday demand. Year-over-year growth is tracking at 2.7x.",
     chart: {
       type: "line",
       title: "Monthly Revenue 2024 ($K)",
@@ -55,7 +55,7 @@ const templates: ChartTemplate[] = [
   },
   {
     keywords: ["market", "share", "pie"],
-    response: "Market share analysis shows a competitive landscape. TechCorp maintains the lead but competitors are gaining ground.",
+    response: "🥧 Market share analysis reveals a competitive landscape. TechCorp holds 32% but InnovateCo is closing the gap fast with 24% and growing quarterly.",
     chart: {
       type: "pie",
       title: "Market Share by Company",
@@ -71,7 +71,7 @@ const templates: ChartTemplate[] = [
   },
   {
     keywords: ["user", "growth", "area"],
-    response: "User growth has been exponential, with both free and premium tiers expanding. Premium adoption is accelerating in recent months.",
+    response: "🚀 User growth is explosive! Free tier expanded 12.9x while premium conversions jumped from 3K to 90K — a 30x increase. Premium adoption rate hit 58% in December.",
     chart: {
       type: "area",
       title: "User Growth (thousands)",
@@ -89,7 +89,7 @@ const templates: ChartTemplate[] = [
   },
   {
     keywords: ["performance", "comparison", "metrics"],
-    response: "Performance comparison across key metrics. Marketing efficiency stands out while customer retention needs attention.",
+    response: "⚡ Performance scorecard shows Marketing ROI crushing benchmarks at 92% (vs 75% target). Customer retention at 62% is the key area for improvement — recommend launching a loyalty program.",
     chart: {
       type: "bar",
       title: "Performance Metrics (%)",
@@ -105,7 +105,7 @@ const templates: ChartTemplate[] = [
   },
   {
     keywords: ["radar", "skills", "team"],
-    response: "Here's a radar chart showing team capabilities across key areas. Strong in technical skills, room to grow in communication.",
+    response: "🎯 Team capabilities radar shows complementary strengths. Team A excels in Technical (90) and Innovation (85), while Team B leads in Design (85) and Communication (80). Consider cross-training opportunities.",
     chart: {
       type: "radar",
       title: "Team Capabilities Assessment",
@@ -120,12 +120,78 @@ const templates: ChartTemplate[] = [
       ],
     },
   },
+  {
+    keywords: ["expense", "budget", "spending", "cost"],
+    response: "💰 Budget allocation breakdown shows Engineering consuming the largest share at 35%. Marketing spend is high at 22% — consider optimizing ad spend for better ROI.",
+    chart: {
+      type: "pie",
+      title: "Budget Allocation by Department",
+      dataKeys: ["value"],
+      data: [
+        { name: "Engineering", value: 35 },
+        { name: "Marketing", value: 22 },
+        { name: "Sales", value: 18 },
+        { name: "Operations", value: 15 },
+        { name: "HR", value: 10 },
+      ],
+    },
+  },
+  {
+    keywords: ["website", "traffic", "visitors"],
+    response: "🌐 Website traffic surged 340% this year! Organic search dominates at peak months while paid traffic provides steady baseline. The SEO investments from Q1 are clearly paying off.",
+    chart: {
+      type: "area",
+      title: "Website Traffic (thousands)",
+      dataKeys: ["organic", "paid", "referral"],
+      data: [
+        { name: "Jan", organic: 15, paid: 8, referral: 3 },
+        { name: "Mar", organic: 28, paid: 12, referral: 6 },
+        { name: "May", organic: 42, paid: 15, referral: 9 },
+        { name: "Jul", organic: 58, paid: 18, referral: 12 },
+        { name: "Sep", organic: 75, paid: 20, referral: 16 },
+        { name: "Nov", organic: 95, paid: 22, referral: 20 },
+      ],
+    },
+  },
+  {
+    keywords: ["product", "rating", "review", "score"],
+    response: "⭐ Product ratings across categories show strong performance. Ease of Use leads at 4.8/5, while Pricing perception at 3.9 is the area needing attention. Overall customer satisfaction: 4.4/5.",
+    chart: {
+      type: "bar",
+      title: "Product Ratings (out of 5)",
+      dataKeys: ["rating"],
+      data: [
+        { name: "Ease of Use", rating: 4.8 },
+        { name: "Features", rating: 4.5 },
+        { name: "Performance", rating: 4.6 },
+        { name: "Support", rating: 4.2 },
+        { name: "Pricing", rating: 3.9 },
+        { name: "Design", rating: 4.7 },
+      ],
+    },
+  },
+  {
+    keywords: ["conversion", "funnel", "signup"],
+    response: "🔄 Conversion funnel analysis shows a 2.1% visitor-to-customer rate. The biggest drop-off is from Trial to Purchase — consider offering extended trials or onboarding improvements.",
+    chart: {
+      type: "bar",
+      title: "Conversion Funnel",
+      dataKeys: ["users"],
+      data: [
+        { name: "Visitors", users: 10000 },
+        { name: "Sign Ups", users: 3200 },
+        { name: "Activated", users: 1800 },
+        { name: "Trial", users: 920 },
+        { name: "Purchase", users: 210 },
+      ],
+    },
+  },
 ];
 
 const fallbackCharts: ChartTemplate[] = [
   {
     keywords: [],
-    response: "Here's a visualization based on your request! I generated a sample dataset for this chart.",
+    response: "📊 Here's a visualization based on your request! I've generated a sample dataset to illustrate the concept. You can switch between chart types using the controls.",
     chart: {
       type: "bar",
       title: "Sample Data Visualization",
@@ -141,7 +207,7 @@ const fallbackCharts: ChartTemplate[] = [
   },
   {
     keywords: [],
-    response: "I've created a trend visualization for you. The data shows interesting patterns over time.",
+    response: "📈 I've created a trend visualization for you. The data reveals a strong upward trajectory with actual values consistently outperforming forecasts — a very healthy sign!",
     chart: {
       type: "line",
       title: "Trend Analysis",
@@ -158,7 +224,7 @@ const fallbackCharts: ChartTemplate[] = [
   },
   {
     keywords: [],
-    response: "Here's a distribution breakdown of the data you requested.",
+    response: "🥧 Here's a distribution breakdown. Segment A dominates with 35% share. The long tail of smaller segments (D+E) accounts for 20% — worth investigating for growth opportunities.",
     chart: {
       type: "pie",
       title: "Distribution Overview",
@@ -174,7 +240,7 @@ const fallbackCharts: ChartTemplate[] = [
   },
   {
     keywords: [],
-    response: "I've generated an area chart showing the growth trajectory based on your query.",
+    response: "🚀 Growth trajectory looks outstanding! The exponential curve suggests a compounding effect — if this trend holds, you're on track to 3x by next quarter.",
     chart: {
       type: "area",
       title: "Growth Trajectory",
@@ -191,7 +257,6 @@ const fallbackCharts: ChartTemplate[] = [
   },
 ];
 
-// Detect chart type from user input
 function detectChartType(input: string): ChartConfig["type"] | null {
   const lower = input.toLowerCase();
   if (lower.includes("pie") || lower.includes("donut")) return "pie";
@@ -205,37 +270,23 @@ function detectChartType(input: string): ChartConfig["type"] | null {
 export function generateChartResponse(input: string): Message {
   const lower = input.toLowerCase();
 
-  // Try to match a template
   for (const template of templates) {
     const matchCount = template.keywords.filter((kw) => lower.includes(kw)).length;
     if (matchCount >= 2 || (template.keywords.length === 1 && matchCount === 1)) {
       const chart = { ...template.chart };
       const detectedType = detectChartType(input);
       if (detectedType) chart.type = detectedType;
-
-      return {
-        id: Date.now().toString(),
-        role: "bot",
-        content: template.response,
-        chart,
-      };
+      return { id: Date.now().toString(), role: "bot", content: template.response, chart };
     }
   }
 
-  // Fallback: pick a random chart, but respect requested type
   const detectedType = detectChartType(input);
   let fallback: ChartTemplate;
-
   if (detectedType) {
     fallback = fallbackCharts.find((f) => f.chart.type === detectedType) || fallbackCharts[0];
   } else {
     fallback = fallbackCharts[Math.floor(Math.random() * fallbackCharts.length)];
   }
 
-  return {
-    id: Date.now().toString(),
-    role: "bot",
-    content: fallback.response,
-    chart: { ...fallback.chart },
-  };
+  return { id: Date.now().toString(), role: "bot", content: fallback.response, chart: { ...fallback.chart } };
 }
